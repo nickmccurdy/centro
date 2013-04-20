@@ -3,8 +3,8 @@
 #include <libnotifymm.h>
 
 void notify(std::string title, std::string description, std::string icon="dialog-information") {
-  Notify::Notification Hello(title, description, icon);
-  Hello.show();
+  Notify::Notification CentroNotification(title, description, icon);
+  CentroNotification.show();
 }
 
 int main(int argc, char* argv[]) {
