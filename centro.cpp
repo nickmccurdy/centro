@@ -1,5 +1,6 @@
 #include <string>
 #include <libnotifymm.h>
+#include "notification_platform.h"
 
 /*
  * The main class for Centro. Holds one NotificationPlatform and many Services.
