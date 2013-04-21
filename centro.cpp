@@ -2,13 +2,6 @@
 #include <list>
 #include <libnotifymm.h>
 
-class NotificationPlatform {
-  public:
-    NotificationPlatform();
-    ~NotificationPlatform();
-    virtual void Notify(std::string title, std::string description, std::string icon="dialog-information") = 0;
-};
-
 class CentroNotifier {
   public:
     CentroNotifier();
