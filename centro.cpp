@@ -1,13 +1,21 @@
-#include <stdlib.h>
-#include <unistd.h>
+#include <string>
+#include <list>
 #include <libnotifymm.h>
 
-void notify(std::string title, std::string description, std::string icon="dialog-information") {
-  Notify::Notification CentroNotification(title, description, icon);
-  CentroNotification.show();
+class CentroNotifier {
+  public:
+    CentroNotifier();
+    ~CentroNotifier();
+    void Notify(std::string title, std::string description, std::string icon="dialog-information");
+};
+
+void CentroNotifier::Notify(std::string title, std::string description, std::string icon) {
+  Notify::Notification notification(title, description, icon);
+  notification.show();
 }
 
 int main(int argc, char* argv[]) {
   Notify::init("Centro");
-  notify("Hello world!", "This is an example notification.");
+  CentroNotifier::CentroNotifier *centroNotifier;
+  centroNotifier->Notify("Hello world!", "This is an example notification.");
 }
