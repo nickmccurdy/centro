@@ -1,5 +1,4 @@
 #include <string>
-#include <list>
 #include <libnotifymm.h>
 
 class CentroNotifier {
