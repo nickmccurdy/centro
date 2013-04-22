@@ -11,4 +11,4 @@ centro: libnotify_platform.o notification_platform.o centro.o
 	$(CC) $^ -o centro $(LDFLAGS)
 
 clean:
-	rm *.o centro
+	rm -f *.o centro
