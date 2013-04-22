@@ -13,18 +13,17 @@ class Service {
       _notifier = notifier;
       _interval = interval;
       _paused = false;
-      Start();
     }
     //~Service();
     void Start();
     void Pause();
     void Unpause();
-  private:
+  protected:
     CentroNotifier *_notifier;
+  private:
     int _interval;
     int _paused;
-    //virtual void Pull() = 0;
-    void Pull();
+    virtual void Pull() = 0;
 };
 
 #endif

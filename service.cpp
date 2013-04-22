@@ -25,11 +25,3 @@ void Service::Pause() {
 void Service::Unpause() {
   _paused = false;
 }
-
-/*
- * Pulls for updates from the appropriate remote service and fires off
- * notifications when appropriate.
- */
-void Service::Pull() {
-  _notifier->Notify("Hello world!", "This is an example notification.");
-}
