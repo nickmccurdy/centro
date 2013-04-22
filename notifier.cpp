@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
   Platform * platform;
   platform = dynamic_cast<Platform*>(libnotifyPlatform);
 
-  Notifier centroNotifier(platform);
-  ExampleService service(&centroNotifier);
+  Notifier notifier(platform);
+  ExampleService service(&notifier);
   service.Start();
 }

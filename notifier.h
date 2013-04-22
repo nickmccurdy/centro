@@ -7,7 +7,7 @@
 
 /*
  * The main class for Centro. Holds one Platform and many Services. Services can
- * send push notifications to Notifier, and CentroNotifier will display the
+ * send push notifications to Notifier, and Notifier will display the
  * notification using the current Platform.
  */
 class Notifier {
