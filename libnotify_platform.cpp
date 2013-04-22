@@ -1,5 +1,4 @@
 #include <string>
-#include <libnotifymm.h>
 
 #include "notification_platform.h"
 #include "libnotify_platform.h"

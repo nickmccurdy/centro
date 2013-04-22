@@ -1,3 +1,5 @@
+#include <libnotifymm.h>
+
 /*
  * Adapts libnotify to work with the NotificationPlatform spec. Should work on
  * many different Linux DEs and WMs (as long as a libnotify server is running).

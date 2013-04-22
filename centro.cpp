@@ -1,5 +1,4 @@
 #include <string>
-#include <libnotifymm.h>
 
 #include "centro.h"
 #include "libnotify_platform.h"
