@@ -1,5 +1,3 @@
-#include <string>
-
 #include "centro.h"
 #include "libnotify_platform.h"
 
