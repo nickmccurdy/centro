@@ -14,7 +14,7 @@ libnotify_platform.o: libnotify_platform.cpp libnotify_platform.h
 	$(CC) -c libnotify_platform.cpp -o libnotify_platform.o $(CFLAGS)
 
 centro: centro.o notification_platform.o libnotify_platform.o
-	$(CC) centro.o notification_platform.o -o centro $(LDFLAGS)
+	$(CC) centro.o notification_platform.o libnotify_platform.o -o centro $(LDFLAGS)
 
 clean:
 	rm *.o centro
