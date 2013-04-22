@@ -7,15 +7,15 @@
 
 /*
  * The main class for Centro. Holds one NotificationPlatform and many Services.
- * Services can send push notifications to CentroNotifier, and CentroNotifier
- * will display the notification using the current NotificationPlatform.
+ * Services can send push notifications to Notifier, and CentroNotifier will
+ * display the notification using the current NotificationPlatform.
  */
-class CentroNotifier {
+class Notifier {
   public:
-    CentroNotifier(NotificationPlatform *platform) {
+    Notifier(NotificationPlatform *platform) {
       _platform = platform;
     }
-    //~CentroNotifier();
+    //~Notifier();
     void Notify(std::string title, std::string description, std::string icon="dialog-information");
   private:
     NotificationPlatform *_platform;

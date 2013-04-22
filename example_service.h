@@ -9,7 +9,7 @@
 /* An example Service that can display "Hello world!" notifications. */
 class ExampleService : public Service {
   public:
-    ExampleService(CentroNotifier *notifier, int interval = 5) : Service(notifier, interval) {}
+    ExampleService(Notifier *notifier, int interval = 5) : Service(notifier, interval) {}
     //~ExampleService();
   protected:
     void Pull();

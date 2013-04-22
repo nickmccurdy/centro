@@ -1,15 +1,15 @@
 #ifndef SERVICE_H
 #define SERVICE_H
 
-#include "centro.h"
+#include "notifier.h"
 
 /*
  * A superclass for classes that can pull information from various web services
- * and then push notifications of new information to a CentroNotifier instance.
+ * and then push notifications of new information to a Notifier instance.
  */
 class Service {
   public:
-    Service(CentroNotifier *notifier, int interval = 5) {
+    Service(Notifier *notifier, int interval = 5) {
       _notifier = notifier;
       _interval = interval;
       _paused = false;
@@ -19,7 +19,7 @@ class Service {
     void Pause();
     void Unpause();
   protected:
-    CentroNotifier *_notifier;
+    Notifier *_notifier;
   private:
     int _interval;
     int _paused;

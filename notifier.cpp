@@ -1,9 +1,9 @@
-#include "centro.h"
+#include "notifier.h"
 #include "libnotify_platform.h"
 #include "example_service.h"
 
 /* Displays a notification to the user with the current NotificationPlatform. */
-void CentroNotifier::Notify(std::string title, std::string description, std::string icon) {
+void Notifier::Notify(std::string title, std::string description, std::string icon) {
   _platform->Notify(title, description, icon);
 }
 
@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
   NotificationPlatform * platform;
   platform = dynamic_cast<NotificationPlatform*>(libnotifyPlatform);
 
-  CentroNotifier centroNotifier(platform);
+  Notifier centroNotifier(platform);
   ExampleService service(&centroNotifier);
   service.Start();
 }
