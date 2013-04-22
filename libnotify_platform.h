@@ -4,10 +4,10 @@
 #include <libnotifymm.h>
 
 /*
- * Adapts libnotify to work with the NotificationPlatform spec. Should work on
- * many different Linux DEs and WMs (as long as a libnotify server is running).
+ * Adapts libnotify to work with the Platform spec. Should work on many
+ * different Linux DEs and WMs (as long as a libnotify server is running).
  */
-class LibnotifyPlatform : public NotificationPlatform {
+class LibnotifyPlatform : public Platform {
   public:
     LibnotifyPlatform() {
       Notify::init("Centro");

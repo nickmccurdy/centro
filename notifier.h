@@ -3,22 +3,22 @@
 
 #include <string>
 
-#include "notification_platform.h"
+#include "platform.h"
 
 /*
- * The main class for Centro. Holds one NotificationPlatform and many Services.
- * Services can send push notifications to Notifier, and CentroNotifier will
- * display the notification using the current NotificationPlatform.
+ * The main class for Centro. Holds one Platform and many Services. Services can
+ * send push notifications to Notifier, and CentroNotifier will display the
+ * notification using the current Platform.
  */
 class Notifier {
   public:
-    Notifier(NotificationPlatform *platform) {
+    Notifier(Platform *platform) {
       _platform = platform;
     }
     //~Notifier();
     void Notify(std::string title, std::string description, std::string icon="dialog-information");
   private:
-    NotificationPlatform *_platform;
+    Platform *_platform;
 };
 
 #endif

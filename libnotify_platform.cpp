@@ -1,6 +1,6 @@
 #include <string>
 
-#include "notification_platform.h"
+#include "platform.h"
 #include "libnotify_platform.h"
 
 /* Sends a notification via libnotify. */
