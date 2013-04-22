@@ -1,3 +1,6 @@
+#ifndef CENTRO_H
+#define CENTRO_H
+
 #include <string>
 
 #include "notification_platform.h"
@@ -17,3 +20,5 @@ class CentroNotifier {
   private:
     NotificationPlatform *_platform;
 };
+
+#endif

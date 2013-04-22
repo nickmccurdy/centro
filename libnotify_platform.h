@@ -1,3 +1,6 @@
+#ifndef LIBNOTIFY_PLATFORM_H
+#define LIBNOTIFY_PLATFORM_H
+
 #include <libnotifymm.h>
 
 /*
@@ -12,3 +15,5 @@ class LibnotifyPlatform : public NotificationPlatform {
     //~LibnotifyPlatform();
     void Notify(std::string title, std::string description, std::string icon="dialog-information");
 };
+
+#endif
