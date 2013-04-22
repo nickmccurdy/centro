@@ -5,7 +5,7 @@
 class LibnotifyPlatform : public NotificationPlatform {
   public:
     LibnotifyPlatform();
-    ~LibnotifyPlatform();
+    //~LibnotifyPlatform();
     void Notify(std::string title, std::string description, std::string icon="dialog-information");
 };
 

@@ -6,6 +6,6 @@
 class CentroNotifier {
   public:
     CentroNotifier();
-    ~CentroNotifier();
+    //~CentroNotifier();
     void Notify(std::string title, std::string description, std::string icon="dialog-information");
 };
