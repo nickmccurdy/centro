@@ -9,9 +9,9 @@
  */
 class Service {
   public:
-    Service(Notifier *notifier, int interval = 5) {
+    Service(Notifier *notifier) {
       _notifier = notifier;
-      _interval = interval;
+      _interval = 5;
       _paused = false;
     }
     //~Service();
