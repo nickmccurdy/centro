@@ -1,7 +1,7 @@
 #ifndef SERVICE_H
 #define SERVICE_H
 
-#include "notifier.h"
+#include "../notifier.h"
 
 /*
  * A superclass for classes that can pull information from various web services

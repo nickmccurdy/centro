@@ -1,6 +1,6 @@
 #include "notifier.h"
-#include "libnotify_platform.h"
-#include "example_service.h"
+#include "platforms/libnotify_platform.h"
+#include "services/example_service.h"
 
 /* Displays a notification to the user with the current Platform. */
 void Notifier::Notify(std::string title, std::string description, std::string icon) {

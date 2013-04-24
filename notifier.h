@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "platform.h"
+#include "platforms/platform.h"
 
 /*
  * The main class for Centro. Holds one Platform and many Services. Services can

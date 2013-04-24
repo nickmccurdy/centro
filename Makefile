@@ -2,11 +2,13 @@ CC        = clang++
 CFLAGS    = `pkg-config --cflags libnotifymm-1.0`
 LDFLAGS   = `pkg-config --libs libnotifymm-1.0`
 
-centro: libnotify_platform.o platform.o notifier.o example_service.o service.o
-	$(CC) $^ -o centro $(LDFLAGS)
+OBJECTS = $(patsubst %.cpp, %.o, $(wildcard *.cpp platforms/*.cpp services/*.cpp))
+
+centro: $(OBJECTS)
+	$(CC) $^ -o $@ $(LDFLAGS)
 
 %.o: %.cpp %.h
 	$(CC) -c $*.cpp -o $*.o $(CFLAGS)
 
 clean:
-	rm -f *.o centro
+	rm -f $(OBJECTS) centro
