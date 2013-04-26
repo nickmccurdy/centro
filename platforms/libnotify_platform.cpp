@@ -1,5 +1,3 @@
-#include <string>
-
 #include "platform.h"
 #include "libnotify_platform.h"
 

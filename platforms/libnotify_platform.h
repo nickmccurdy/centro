@@ -1,6 +1,7 @@
 #ifndef LIBNOTIFY_PLATFORM_H
 #define LIBNOTIFY_PLATFORM_H
 
+#include <string>
 #include <libnotifymm.h>
 
 /*

@@ -1,6 +1,8 @@
 #ifndef NOTIFICATION_PLATFORM_H
 #define NOTIFICATION_PLATFORM_H
 
+#include <string>
+
 /*
  * An adapter that provides a common interface for displaying notifications with
  * different platforms.
