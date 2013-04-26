@@ -1,9 +1,6 @@
 #ifndef EXAMPLE_SERVICE_H
 #define EXAMPLE_SERVICE_H
 
-#include <string>
-#include <libnotifymm.h>
-
 #include "service.h"
 
 /* An example Service that can display "Hello world!" notifications. */
