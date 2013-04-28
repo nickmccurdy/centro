@@ -11,9 +11,9 @@ void Notifier::Notify(std::string title, std::string description, std::string ic
  * Starts up Centro by initializing a Platform and a Service.
  */
 int main(int argc, char* argv[]) {
-  LibnotifyPlatform * libnotifyPlatform = new LibnotifyPlatform;
+  LibnotifyPlatform libnotifyPlatform;
   Platform * platform;
-  platform = dynamic_cast<Platform*>(libnotifyPlatform);
+  platform = dynamic_cast<Platform*>(&libnotifyPlatform);
 
   Notifier notifier(platform);
   ExampleService service(&notifier);
