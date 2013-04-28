@@ -7,7 +7,6 @@
 class ExampleService : public Service {
   public:
     ExampleService(Notifier *notifier) : Service(notifier) {}
-    //~ExampleService();
   protected:
     void Pull();
 };

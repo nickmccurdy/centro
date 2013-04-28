@@ -14,7 +14,9 @@ class Service {
       _interval = 5;
       _paused = false;
     }
-    //~Service();
+    virtual ~Service() {
+      delete _notifier;
+    }
     void Start();
     void Pause();
     void Unpause();
