@@ -3,5 +3,5 @@ compiler:
   - clang
 before_install:
   - sudo apt-get update
-  - sudo apt-get install libnotify-bin libnotify-dev libnotifymm
+  - sudo apt-get install libnotify-bin libnotify-dev
 script: make
