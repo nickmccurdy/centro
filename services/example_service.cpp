@@ -1,4 +1,5 @@
 #include "example_service.h"
+#include <iostream>
 
 /* Sends an example "Hello world!" notification. */
 void ExampleService::Pull() {
