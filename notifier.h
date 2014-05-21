@@ -18,7 +18,7 @@ class Notifier {
     ~Notifier() {
       delete _platform;
     }
-    void Notify(std::string title, std::string description, std::string icon="dialog-information");
+    void Notify(std::string title, std::string description);
   private:
     Platform *_platform;
 };

@@ -2,8 +2,8 @@
 #include "services/example_service.h"
 
 /* Displays a notification to the user with the current Platform. */
-void Notifier::Notify(std::string title, std::string description, std::string icon) {
-  _platform->Notify(title, description, icon);
+void Notifier::Notify(std::string title, std::string description) {
+  _platform->Notify(title, description);
 }
 
 /*

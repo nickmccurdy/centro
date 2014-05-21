@@ -13,7 +13,7 @@ class LibnotifyPlatform : public Platform {
     LibnotifyPlatform() {
       Notify::init("Centro");
     }
-    void Notify(std::string title, std::string description, std::string icon="dialog-information");
+    void Notify(std::string title, std::string description);
 };
 
 #endif
