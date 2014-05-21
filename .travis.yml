@@ -1,7 +1,4 @@
 language: cpp
 compiler:
   - clang
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install libnotify4 libnotify-bin libnotify-dev
 script: make
