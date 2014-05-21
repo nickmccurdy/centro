@@ -10,5 +10,8 @@ $(TARGET): $(OBJECTS)
 $(OBJECTS): %.o : %.cpp
 	$(CC) -c $< -o $@ $(CFLAGS)
 
+run: $(TARGET)
+	./$(TARGET)
+
 clean:
 	rm -f $(OBJECTS) $(TARGET)
