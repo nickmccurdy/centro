@@ -1,14 +1,14 @@
-CC        = clang++
+CXX        = clang++
 
 SOURCES   = $(wildcard *.cpp platforms/*.cpp services/*.cpp)
 OBJECTS   = $(patsubst %.cpp, %.o, $(SOURCES))
 TARGET    = centro
 
 $(TARGET): $(OBJECTS)
-	$(CC) $^ -o $@ $(LDFLAGS)
+	$(CXX) $^ -o $@ $(LDFLAGS)
 
 $(OBJECTS): %.o : %.cpp
-	$(CC) -c $< -o $@ $(CFLAGS)
+	$(CXX) -c $< -o $@ $(CFLAGS)
 
 run: $(TARGET)
 	./$(TARGET)
