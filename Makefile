@@ -1,5 +1,3 @@
-CXX        = clang++
-
 SOURCES   = $(wildcard *.cpp platforms/*.cpp services/*.cpp)
 OBJECTS   = $(patsubst %.cpp, %.o, $(SOURCES))
 TARGET    = centro
