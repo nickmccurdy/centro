@@ -1,6 +1,6 @@
-SOURCES   = $(wildcard *.cpp platforms/*.cpp services/*.cpp)
-OBJECTS   = $(patsubst %.cpp, %.o, $(SOURCES))
-TARGET    = centro
+SOURCES   := $(wildcard *.cpp platforms/*.cpp services/*.cpp)
+OBJECTS   := $(patsubst %.cpp, %.o, $(SOURCES))
+TARGET    := centro
 
 $(TARGET): $(OBJECTS)
 	$(CXX) $^ -o $@ $(LDFLAGS)
