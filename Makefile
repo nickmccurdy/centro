@@ -11,5 +11,11 @@ $(OBJECTS): %.o : %.cpp
 run: $(TARGET)
 	./$(TARGET)
 
+test: $(TARGET)
+	@echo "Hello world!: This is an example notification." > expected.txt
+	./$(TARGET) --test > actual.txt
+	diff expected.txt actual.txt
+	@rm expected.txt actual.txt
+
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+	rm -f $(OBJECTS) $(TARGET) expected.txt actual.txt
