@@ -20,12 +20,12 @@ class Service {
     void Start();
     void Pause();
     void Unpause();
+    virtual void Pull() = 0;
   protected:
     Notifier *_notifier;
   private:
     int _interval;
     int _paused;
-    virtual void Pull() = 0;
 };
 
 #endif
