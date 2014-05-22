@@ -9,20 +9,16 @@
  */
 class Service {
   public:
-    Service(Notifier *notifier) {
-      _notifier = notifier;
+    Service(Notifier &notifier): _notifier(notifier) {
       _interval = 5;
       _paused = false;
-    }
-    virtual ~Service() {
-      delete _notifier;
     }
     void Start();
     void Pause();
     void Unpause();
     virtual void Pull() = 0;
   protected:
-    Notifier *_notifier;
+    Notifier &_notifier;
   private:
     int _interval;
     int _paused;

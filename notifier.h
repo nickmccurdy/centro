@@ -12,15 +12,10 @@
  */
 class Notifier {
   public:
-    Notifier(Platform *platform) {
-      _platform = platform;
-    }
-    ~Notifier() {
-      delete _platform;
-    }
+    Notifier(Platform &platform): _platform(platform) {}
     void Notify(std::string title, std::string description);
   private:
-    Platform *_platform;
+    Platform &_platform;
 };
 
 #endif

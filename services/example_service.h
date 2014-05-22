@@ -6,7 +6,7 @@
 /* An example Service that can display "Hello world!" notifications. */
 class ExampleService : public Service {
   public:
-    ExampleService(Notifier *notifier) : Service(notifier) {}
+    ExampleService(Notifier &notifier) : Service(notifier) {}
     void Pull();
 };
 
